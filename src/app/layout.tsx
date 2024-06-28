@@ -4,6 +4,7 @@ import "./globals.css";
 import Link from "next/link";
 import Header from "./components/Header";
 import Container from "./components/Container";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Krona+One&display=optional"
+          rel="stylesheet"
+        />
+      </Head>
       <body className={inter.className}>
         <Container>
           <Header></Header>
